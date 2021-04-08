@@ -1,4 +1,4 @@
-package com.company;
+package com.company.exercise2d;
 import java.util.Scanner;
 
 public class Test3 {
