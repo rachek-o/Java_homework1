@@ -1,4 +1,4 @@
-package com.company;
+package com.company.exercise3c;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
