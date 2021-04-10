@@ -11,7 +11,7 @@ public class Flower implements Comparable<Flower> {
     private final int price;
 
 
-    private Flower() {
+    public Flower() {
         type = "Rose";
         size = "big";
         color = "red";
@@ -71,14 +71,16 @@ public class Flower implements Comparable<Flower> {
         public int getPrice() {
         return price;
     }
-        void bloom()
+        boolean bloom()
     {
         System.out.println("Rose blooming");
+        return true;
     }
 
-        void smell()
+        boolean smell()
     {
         System.out.println("Alstroemeria smelling");
+        return true;
     }
         @Override
         public int compareTo(Flower f) {
