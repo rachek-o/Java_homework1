@@ -73,14 +73,14 @@ public class Flower implements Comparable<Flower> {
     }
         boolean bloom()
     {
-        System.out.println("Rose blooming");
+        System.out.println("Rose bloom");
         return true;
     }
 
         boolean smell()
     {
-        System.out.println("Alstroemeria smelling");
-        return true;
+        System.out.println("Alstroemeria doesn't smell");
+        return false;
     }
         @Override
         public int compareTo(Flower f) {

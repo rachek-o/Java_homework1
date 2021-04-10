@@ -10,4 +10,9 @@ class FlowerTest {
         Flower f1 = new Flower();
         assertTrue(f1.bloom());
     }
+    @Test
+    void falseTest() {
+        Flower f2 = new Flower();
+        assertFalse(f2.smell());
+    }
 }
