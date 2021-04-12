@@ -79,8 +79,8 @@ public class Flower implements Comparable<Flower> {
 
         boolean smell()
     {
-        System.out.println("Alstroemeria doesn't smell");
-        return false;
+        System.out.println("Alstroemeria smell");
+        return true;
     }
         @Override
         public int compareTo(Flower f) {
