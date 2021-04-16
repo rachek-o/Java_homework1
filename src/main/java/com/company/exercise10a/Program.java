@@ -1,5 +1,7 @@
 package com.company.exercise10a;
 import java.util.*;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class Program {
     public static void main(String[] args) throws Exception {
@@ -16,18 +18,16 @@ public class Program {
         personMap.put("Kit", "Taras");
         personMap.put("Kolo", "Olena");
 
-        System.out.println("HashMap elements:" + personMap);
-
-        String remove = null;
-        for (Map.Entry<String, String> stringStringEntry : personMap.entrySet()) {
-            String key1 = stringStringEntry.getKey();
-            String value = stringStringEntry.getValue();
-            if (value.equals("Orest"))
-                remove = key1;
+            String remove = null;
+            for (Map.Entry<String, String> stringStringEntry : personMap.entrySet()) {
+                String key = stringStringEntry.getKey();
+                String value = stringStringEntry.getValue();
+                if (value.equals("Orest"))
+                    remove = key;
+            }
+            personMap.remove(remove);
+            System.out.print("Without Orest" + personMap);
         }
-        personMap.remove(remove);
-        System.out.print("Without Orest" + personMap);
-    }
 
     }
 
