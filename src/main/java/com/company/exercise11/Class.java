@@ -16,7 +16,7 @@ public class Class {
         System.out.println("COURSE 2: ");
         Student.printStudent(2);
 
-        System.out.println("COURSE 3: ");
+        System.out.println("COURSE 5: ");
         Student.printStudent(5);
 
     }
